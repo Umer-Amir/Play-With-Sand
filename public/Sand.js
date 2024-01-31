@@ -52,13 +52,13 @@ function background() {
 background();
 
 function setup() {
-  let colors = ["Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet"];
+  let colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"]; // Lowercase color names
   let buttonX = 600;
   let buttonY = 70;
   let buttonSpacing = 70;
 
   for (let i = 0; i < colors.length; i++) {
-    colorButton = createButton(colors[i]);
+    let colorButton = createButton(colors[i]);
     colorButton.position(buttonX, buttonY);
     colorButton.mousePressed(() => setColor(colors[i]));
 
@@ -68,7 +68,6 @@ function setup() {
 
     colorButton.style("background-color", colors[i]);
     colorButton.style("color", "black");
-    colorButton.style("border", "none");
     colorButton.style("border", "1px solid black");
     colorButtons.push(colorButton);
 
@@ -140,6 +139,7 @@ function setup() {
 function setColor(color) {
   hueValue = colorToHue(color);
   useRainbowColors = false;
+  playSound("/audio/Single.wav", 0.01);
 }
 
 function toggleRainbow() {
@@ -149,7 +149,7 @@ function toggleRainbow() {
   } else {
     rainbowButtonText = "[R] Single Color";
   }
-
+  playSound("/audio/Button.wav", 0.05);
   rainbowButton.html(rainbowButtonText);
 }
 
@@ -180,6 +180,7 @@ function clearCanvas() {
       grid[i][j] = 0;
     }
   }
+  playSound("/audio/Chat.mp3", 0.05);
 }
 
 function toggleBrushSize() {
@@ -196,7 +197,7 @@ function toggleBrushSize() {
     brushSize = 1;
     toggleButtonText = "[B] Toggle Brush Size (1)";
   }
-
+  playSound("/audio/Clear.wav", 0.1);
   toggleButton.html(toggleButtonText);
 }
 
@@ -210,7 +211,7 @@ function toggleSandFalling() {
     pauseButtonText = "[SPACE] Resume";
     pauseButton.style("background-color", "Red");
   }
-
+  playSound("/audio/Pause.wav", 0.05);
   pauseButton.html(pauseButtonText);
 }
 
@@ -255,6 +256,7 @@ function mouseDragged() {
 }
 
 function mouseClicked() {
+  playSound("/audio/Typing.wav", 0.01);
   let mouseCol = floor(mouseX / w);
   let mouseRow = floor(mouseY / w);
 
@@ -355,4 +357,10 @@ function draw() {
     }
     grid = nextGrid;
   }
+}
+
+function playSound(url, volume) {
+  var audio = new Audio(url);
+  audio.volume = volume;
+  audio.play();
 }
