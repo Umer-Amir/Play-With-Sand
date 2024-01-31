@@ -1,4 +1,4 @@
-# Sand
+# Play With Sand
 
 ## Basic Sand Simulator
 
@@ -18,7 +18,10 @@ The Sand Simulator is a creative and educational tool that visually represents t
 
 ### Getting Started
 
-To run the Sand Simulator, simply open the `index.html` file in a modern web browser. The application is entirely client-side, requiring no additional installation or server setup.
+To run the Sand Simulator, you can do any one of the following:
+1. Simply open the `/public/index.html` file in a modern web browser. The application is entirely client-side, requiring no additional installation or server setup.
+2. Run the SAND.exe file followed with ctrl+click on http://localhost:3000.
+3. Run the SAND.bat file followed with ctrl+click on http://localhost:3000.
 
 ### Usage
 
@@ -34,4 +37,4 @@ Upon loading the application, you will be presented with a canvas where the sand
 
 - Special thanks to The Coding Train for guidance and inspiration in creating this simulator.
 
-(/public/images/ME.png)
+[~Umer Amir](/public/images/ME.png)
