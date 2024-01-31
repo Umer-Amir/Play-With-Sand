@@ -37,4 +37,4 @@ Upon loading the application, you will be presented with a canvas where the sand
 
 - Special thanks to The Coding Train for guidance and inspiration in creating this simulator.
 
-[~Umer Amir](/public/images/ME.png)
+![~Umer Amir](/public/images/ME.png)
