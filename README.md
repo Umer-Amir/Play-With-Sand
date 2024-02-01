@@ -20,8 +20,7 @@ The Sand Simulator is a creative and educational tool that visually represents t
 
 To run the Sand Simulator, you can do any one of the following:
 1. Simply open the `/public/index.html` file in a modern web browser. The application is entirely client-side, requiring no additional installation or server setup. (No Sound effects)
-2. Run the SAND.exe file followed with ctrl+click on http://localhost:3000.
-3. Run the SAND.bat file followed with ctrl+click on http://localhost:3000.
+2. Open terminal inside the folder and run this command: npm start followed by ctrl + clicking  http://localhost:3000
 
 ### Usage
 
