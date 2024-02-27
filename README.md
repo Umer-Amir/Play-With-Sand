@@ -34,6 +34,6 @@ Upon loading the application, you will be presented with a canvas where the sand
 
 ### Acknowledgments
 
-- Special thanks to The Coding Train for guidance and inspiration in creating this simulator.
+- Special thanks to The [The Coding Train](https://www.youtube.com/@TheCodingTrain) for guidance and inspiration in creating this simulator.
   
 <img src="./public/images/ME.png" width="250" height="333" />
